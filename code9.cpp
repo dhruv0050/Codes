@@ -1,3 +1,6 @@
+//BASIC STRUCTURE PROGRAM TO INPUT
+//AGE, FIRST NAME , LAST NAME AND STANDARD 
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
