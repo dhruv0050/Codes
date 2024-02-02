@@ -1,2 +1,2 @@
-# Codes-C-
+# Codes
 basic to levelled up codes
