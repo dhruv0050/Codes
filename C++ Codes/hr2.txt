@@ -1,0 +1,41 @@
+Yuvan and his friends were playing ludo with a dice. Everyone was getting bored by this, so the gang leader Pradeepto Sarkar who was having a devil mind decided to make a special dice in which there are N numbers 1 to N and in which one number was missing and he asked the players to find that number.
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int test;
+    cin>>test;
+    int size1;
+    cin>>size1;
+    int j=1;
+    while(j<=test){
+        
+        int arr[100];
+        int summ=0;
+        for(int i=1; i<size1; i++){
+        cin>>arr[i];
+        }
+        
+        for (int k=1; k<=size1; k++){
+            summ+=arr[k];
+        }
+         
+        int sum=0;
+        for (int l=1; l<=size1; l++){
+            sum+=l;
+        }
+        
+        int A=sum-summ;
+        cout<<A<<endl;
+        j++;
+        
+    }   
+    
+    
+    return 0;
+}

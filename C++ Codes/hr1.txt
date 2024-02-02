@@ -1,0 +1,54 @@
+On 11th May, Team NSCC decided to have an offline meet for the beginning for new tenure and to welcome new president. There were N people in the meet represented by a number as uniqueness but the devil Pradeepto was having some different plans. He used his devil powers and he made only one number to occur odd time in the array
+
+Your task is to find that number.
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+bool search(int array[],int size, int key){
+    for(int i=0;i<size;i++){
+        if (array[i]==key){
+            return 1;
+        }
+    }
+    return 0;
+}
+int main() {
+    int key;
+    cin>>key;
+    
+    int size1;
+    cin>>size1;
+    
+    int arr[100];
+    for(int i=0; i<size1; i++){
+        cin>>arr[i];
+    }
+    int size2;
+    cin>>size2;
+    
+    int brr[100];
+    for(int j=0; j<size2; j++){
+        cin>>brr[j];
+    }
+    bool found=search(arr,size1,key);
+    if(found){
+        cout<<key<<endl;
+    }
+    else{
+        cout<<"number not present"<<endl;
+    }
+    bool find=search(brr,size2,key);
+    if(find){
+        cout<<key<<endl;
+    }
+    else{
+        cout<<"number not present"<<endl;
+    }
+    return 0;
+}
